@@ -144,13 +144,6 @@ Run it from inside `notebooks/`, because paths are relative (`../data/processed/
 2. Run `notebooks/data_scraping/athete_profiles.ipynb` to produce `regular_season.csv`. This depends on step 1 and on `bigwest_roster.csv`.
 3. Rerun `season_best_replication.ipynb`.
 
-> **Note:** see *Known issues* below. The scraping notebooks currently need some path and file fixes before they run end-to-end.
 
 ## Known issues / TODO
-
-- **Missing raw input names:** `big_west_scraping.ipynb` reads `data/raw/bigwest_2021_2026_audit.csv`, and `athete_profiles.ipynb` reads `data/raw/bigwest_regular_season_partial.csv`. Neither file is in the repo. They probably correspond to `championship_raw.csv` and `regular_season_raw.csv`.
-- **Missing module:** `athete_profiles.ipynb` imports `bigwest_model` (`bm.parse_mark`), but only a compiled `notebooks/__pycache__/bigwest_model.cpython-314.pyc` is committed, not the `.py` source. `parse_mark` is also defined in `season_best_replication.ipynb`.
-- **Relative paths:** the notebooks in `notebooks/data_scraping/` use `../data/...`, which resolves to `notebooks/data/`. It should be `../../data/...`.
-- **Typo:** `season_best_replication.ipynb` reads `"../data./processed/meet_venues.csv"`, which should be `"../data/processed/meet_venues.csv"`.
-- **No scraping code:** the scraping notebooks only clean data. The code that originally scraped results from the web is not included.
-- **No requirements file:** consider adding `requirements.txt`, and a `.gitignore` for `.DS_Store` and `__pycache__/`.
+- **No requirements file:** consider adding `requirements.txt`
