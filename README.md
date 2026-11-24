@@ -26,6 +26,7 @@ Averaged over 14 championships (7 seasons × men/women). Source: `notebooks/out/
 
 - **Entrants field:** only athletes who actually competed in that event at that year's championship. Since we don't have official entry lists, we build the field from the meet's results.
 - **Everyone field:** every athlete with an outdoor mark in the event from a school at that year's championship. This is the list a coach could build ahead of time.
+- **Last year's totals:** naive baseline, predicts each team will score exactly what it scored at last year's championship, ignoring this season's marks entirely
 
 **Findings**
 
