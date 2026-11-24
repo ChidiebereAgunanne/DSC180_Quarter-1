@@ -24,7 +24,7 @@ Averaged over 14 championships (7 seasons × men/women). Source: `notebooks/out/
 | Exact place | 0.28 | 0.29 | n/a |
 | Place within one | 0.63 | 0.62 | n/a |
 
-- **Entrants field:** only athletes who actually competed in that event at that year's championship. This is the best case for the method, because it uses information not known before the meet.
+- **Entrants field:** only athletes who actually competed in that event at that year's championship. This is generated from a list released less than a week before championships. So a coach could build this list closer to conference championship 
 - **Everyone field:** every athlete with an outdoor mark in the event from a school at that year's championship. This is the list a coach could build ahead of time.
 
 **Findings**
